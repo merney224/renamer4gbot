@@ -15,12 +15,12 @@ from helper.database import daily as daily_
 from helper.date import check_expi
 import os
 
-CHANNEL = os.environ.get('CHANNEL', "")
-STRING = os.environ.get("STRING", "")
-ADMIN = int(os.environ.get("ADMIN", 1484670284))
-bot_username = os.environ.get("BOT_USERNAME","GangsterBaby_renamer_BOT")
-log_channel = int(os.environ.get("LOG_CHANNEL", ""))
-token = os.environ.get('TOKEN', '')
+CHANNEL = os.environ.get('CHANNEL', "@CFUpdates")
+STRING = os.environ.get("STRING", "BQCEW4EeuFlxOgnqbBx6xIZDCjhEI8WNVt29Z6AtLL-OozpUF6et-QEt1Ujrj3z8xBgPYqfdoNana1V5BXr9n1RRp6GRVygCNcHCeMfaMOguce1GT3sOFjsUehlIy4QSzLed3_zRC-zy6mgXBQDARi2ZHT6xoQS9J6nRsWEKoIOBHaFaQCM316Wfp2o4LkyGjs3JgLtYrUUA-w6daP6WE9bMRequzkNYXkvfh1nZZIK1sgg95evbhvbqe7gHlraKWR6fMZjxSAFEEJ8zhugE7wGHtC_qugGgZ6Hy4-ilbDz5dzt9s-AiPmTfJ4GKb0jQkXtYn8qZovmAaiakgTYV67miAAAAAYiHvBkA")
+ADMIN = int(os.environ.get("ADMIN", 6585564185))
+bot_username = os.environ.get("BOT_USERNAME","CFrenamerbot")
+log_channel = int(os.environ.get("LOG_CHANNEL", "-1002933718411"))
+token = os.environ.get('TOKEN', '8152348968:AAHX-dPC_CUq9eRZA183yFSKIo5HwJI-8Tg')
 botid = token.split(':')[0]
 FLOOD = 500
 LAZY_PIC = os.environ.get("LAZY_PIC", "")
@@ -36,7 +36,7 @@ elif 12 <= currentTime.hour < 12:
 else:
     wish = '🦋 Good evening baby 🦋'
 
-# -------------------------------
+# ---------Lazy----------
 
 
 @Client.on_message(filters.private & filters.command(["start"]))
@@ -50,11 +50,11 @@ async def start(client, message):
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/LazyDeveloper")],
-                                      [InlineKeyboardButton("🦋 Subscribe us 🦋", url="https://youtube.com/@LazyDeveloperr")],
-                                      [InlineKeyboardButton("Support Group", url='https://t.me/LazyPrincessSupport'),
-                                      InlineKeyboardButton("Movie Channel", url='https://t.me/real_MoviesAdda2')],
-                                      [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
+                                      [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/moviemediachannel")],
+                                      [InlineKeyboardButton("🦋 Follow us 🦋", url="https://t.me/Filmy_beats")],
+                                      [InlineKeyboardButton("Movie Group", url='https://t.me/MoviepubGroup'),
+                                      InlineKeyboardButton("Main Channel", url='https://t.me/CFUpdates')],
+                                      [InlineKeyboardButton("Autofilter bot", url='https://t.me/AutofilterCF2bot')]
                                       ]))
         return
     if id:
@@ -64,11 +64,11 @@ async def start(client, message):
                 await message.reply_photo(photo=LAZY_PIC,
                                          caption=txt,
                                          reply_markup=InlineKeyboardMarkup(
-                                             [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/LazyDeveloper")],
-                                              [InlineKeyboardButton("🦋 Subscribe us 🦋", url="https://youtube.com/@LazyDeveloperr")],
-                                              [InlineKeyboardButton("Support Group", url='https://t.me/LazyPrincessSupport'),
-                                             InlineKeyboardButton("Movie Channel", url='https://t.me/real_MoviesAdda2')],
-                                             [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
+                                             [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/moviemediachannel")],
+                                              [InlineKeyboardButton("🦋 Follow us 🦋", url="https://t.me/Filmy_beats")],
+                                              [InlineKeyboardButton("Movie Group", url='https://t.me/MoviepubGroup'),
+                                             InlineKeyboardButton("Main Channel", url='https://t.me/CFUpdates ')],
+                                             [InlineKeyboardButton("Autofilter bot", url='https://t.me/AutofilterCF2bot')]
                                           ]))
             except:
                 return
@@ -84,11 +84,11 @@ async def start(client, message):
 	**Document Or Video** and enter new filename to rename it__
 	""", reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/LazyDeveloper")],
-                                          [InlineKeyboardButton("🦋 Subscribe us 🦋", url="https://youtube.com/@LazyDeveloperr")],
-                                          [InlineKeyboardButton("Support Group", url='https://t.me/LazyPrincessSupport'),
-                                          InlineKeyboardButton("Movie Channel", url='https://t.me/real_MoviesAdda2')],
-                                          [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
+                                         [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/moviemediachannel")],
+                                          [InlineKeyboardButton("🦋 Follow us 🦋", url="https://t.me/Filmy_beats")],
+                                          [InlineKeyboardButton("Movie Group", url='https://t.me/MoviepubGroup'),
+                                          InlineKeyboardButton("Main Channel", url='https://t.me/CFUpdates')],
+                                          [InlineKeyboardButton("Autofilter bot", url='https://t.me/AutofilterCF2bot')]
                                           ]))
     
 
@@ -202,3 +202,4 @@ async def send_doc(client, message):
             await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}\n**Dc ID** :- {dcid}""", reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("📝 Rename", callback_data="rename"),
                   InlineKeyboardButton("✖️ Cancel", callback_data="cancel")]]))
+
